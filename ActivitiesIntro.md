@@ -1,65 +1,12 @@
+# Android Activities Intro
 
-[New Section](#New-Section)
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
-</details>
+## Activities Concept
+<details><summary>What is the point of all this?</summary>
 
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
-</details>
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
-</details>
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
-</details>
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
-</details>
+<p>
 
-## New Section
-<details>
-  
-  <summary>What is the name of the next richest person?</summary>
-  <p>
-  
-  **WHAT**
-  > Generation
-  
-  </p>
+# There is a worry for us
+
+</p>
+
 </details>
