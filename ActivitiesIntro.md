@@ -21,3 +21,9 @@
   - Must declare the activities in manifest
     - Declare certain attributes
 
+  ### Declare Activities
+  - To declare activity:
+    - Open maifest file and add an `<activity>` element as a child of the `<application>` element.
+
+
+
