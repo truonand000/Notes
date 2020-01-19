@@ -1,5 +1,9 @@
 # Android Activities Intro
 
+# Table of Contents
+  - [Concept Of Activities](#Concept-Of-Activities)
+  - [Configuring the Maniest](#Configuring-The-Manifest)
+
 ## Concept Of Activities
 
 - Most apps contain multiple screens, meaning they have mutiple activities
@@ -25,14 +29,39 @@
   - To declare activity:
     - Open maifest file and add an `<activity>` element as a child of the `<application>` element.
     - For example:
-      ```xml
+    ```xml
 
       <manifest ...>
         <application ...>
-          <activity android:name=" .ExampleActivity"/>
+          <activity android:name="*.ExampleActivity"/>
           ...
         </appliaciton ...>
       </manifest>
+
+    ```
+    - The only required attribute for this element is `android:name`
+      - Specifies the class name of the activity.
+    - Can add attributes that define activity characteristics:
+      - Label
+      - Icon
+      - UI theme
+
+
+### Declare intent filters
+
+- `Intent filters` are a powerful feature of the Android Platform:
+  - Ability to launch an activity based on `explicit request` and `implicit requests`.
+    - Example:
+      - explicit request might tell the system to "Start the Send Email actiity in the Gmail app"
+      - implicit request might tell system to "Start a Send Email screen in any actiity that can do the job"
+      ```python
+
+        name = "What ?"
+        nothing = 4
+
+        def function s():
+          for i in range(10):
+            print(i)
 
       ```
 
