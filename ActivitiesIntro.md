@@ -24,6 +24,17 @@
   ### Declare Activities
   - To declare activity:
     - Open maifest file and add an `<activity>` element as a child of the `<application>` element.
+    - For example:
+      ```xml
+
+      <manifest ...>
+        <application ...>
+          <activity android:name=" .ExampleActivity"/>
+          ...
+        </appliaciton ...>
+      </manifest>
+
+      ```
 
 
 
