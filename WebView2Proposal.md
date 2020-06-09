@@ -1,14 +1,14 @@
 ```c++
 interface IWebViewWindowHost
 {
-	virtual HRESULT HostWebView() = 0;
+    virtual HRESULT HostWebView() = 0;
     virtual smart_ptr<IWebView> GetIWebView() = 0;
 }
 _______________________________________________________________
 
 interface IWebView
 {
-	virtual HRESULT CreateEnviornmentAndInitWebView() = 0;
+    virtual HRESULT CreateEnviornmentAndInitWebView() = 0;
     virtual HRESULT Navigate(wchar_t * url, 
                      _in_opt_ wchar_t *postData,
                      _in_opt_ wchar_t *httpHeaders) = 0;           
