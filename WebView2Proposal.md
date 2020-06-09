@@ -1,7 +1,10 @@
 ```c++
 interface IWebViewWindowHost
 {
+    // Intialize and host IWebView
     virtual HRESULT HostWebView() = 0;
+    
+    // Get pointer to IWebView Instance
     virtual smart_ptr<IWebView> GetIWebView() = 0;
 }
 _______________________________________________________________
