@@ -1,8 +1,8 @@
 ```c++
 interface IWebViewWindowHost
 {
-	// Trigger initialization of web view and host it within this window.
-	virtual HRESULT HostWebView(...) = 0;
+    // Trigger initialization of web view and host it within this window.
+    virtual HRESULT HostWebView(...) = 0;
     
     // Get pointer to IWebView Instance
     virtual smart_ptr<IWebView> GetIWebView() = 0;
@@ -11,8 +11,9 @@ _______________________________________________________________
 
 interface IWebView
 {
-	// Initialize environment (required for each web view instance), the web view controller, web view instance itself, etc.
-	virtual HRESULT CreateEnviornmentAndInitWebView(...) = 0;
+    // Initialize environment (required for each web view instance), 
+    // the web view controller, web view instance itself, etc.
+    virtual HRESULT CreateEnviornmentAndInitWebView(...) = 0;
     
     // Navigate to provided url. Optional post data and http header params.
     virtual HRESULT Navigate(wchar_t * url, 
@@ -36,21 +37,24 @@ class AbstractWebView
     
 {
 public:
-	// Interface Methods
+    // Interface Methods
 protected:
-	// Members like m_webView and m_webViewController are common to all webviews and are depended upon when registering event handlers, which is the reason they are protected instead of private.
-	smart_ptr<ICoreWebView2> m_webView;
+    // Members like m_webView and m_webViewController are common to all webviews 
+    // and are depended upon when registering event handlers, which is the reason 
+    // they are protected instead of private.
+    smart_ptr<ICoreWebView2> m_webView;
     smart_ptr<ICoreWebView2Controller> m_webViewController;
     
-    // Abstract method. Each unique webview will have their own set of event handlers, which will all be registered here.
-	virtual void RegisterEventHandlers();
+    // Abstract method. Each unique webview will have their own set of event handlers,
+    // which will all be registered here.
+    virtual void RegisterEventHandlers();
 }
 _______________________________________________________________
 
 class SignInWebViewWindowHost final:
 	public IWebViewWindowHost
 {
-	// Configure window to fit needs of the web dialog.
+    // Configure window to fit needs of the web dialog.
 }
 _______________________________________________________________
 
@@ -61,14 +65,14 @@ class SignInWebView final:
 	...
 protected:
 
-	// Concrete implementation
-	void RegisterEventHandlers() override
+    // Concrete implementation
+    void RegisterEventHandlers() override
     {
     	// Register Event Handlers here.
     }
     
 private:
-	// Other unique members required for webview set up specific to use of the webview case by case.
+    // Other unique members required for webview set up specific to use of the webview case by case.
 }
 
 _______________________________________________________________
